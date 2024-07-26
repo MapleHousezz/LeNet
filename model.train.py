@@ -188,4 +188,5 @@ if __name__ == "__main__":
     matplot_acc_loss(train_process)
 
     print('a')
+    print(train_process)
 
