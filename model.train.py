@@ -187,6 +187,6 @@ if __name__ == "__main__":
     train_process = train_model_process(LeNet, train_dataloader,val_dataloader, 1)
     matplot_acc_loss(train_process)
 
-    print('a')
-    print(train_process)
+    # print('a')
+    # print(train_process)
 
