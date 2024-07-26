@@ -58,7 +58,7 @@ def train_model_process(model, train_dataloader, val_dataloader, num_epochs):
     # 准确度列表
     train_acc_all = []
     val_acc_all = []
-    # 当前时间
+    # 当前时间>>
     since = time.time()
 
     for epoch in range(num_epochs):
