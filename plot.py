@@ -19,7 +19,7 @@ train_loader = Data.DataLoader(dataset=train_data,
 # 输出展示数据
 for step, (b_x, b_y) in enumerate(train_loader):
     if step > 0:
-        break   # 只拿第一批次的数据来测试
+        break   #   只拿第一批次的数据来测试
 batch_x = b_x.squeeze().cpu().numpy()
 batch_y = b_y.cpu().numpy()
 class_label = train_data.classes  # 数据标签
