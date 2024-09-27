@@ -153,7 +153,7 @@ if __name__ == "__main__":
     LeNet =LeNet()
 
     train_dataloader,val_dataloader = train_val_data_process()
-    train_process = train_model_process(LeNet, train_dataloader,val_dataloader, 1)
+    train_process = train_model_process(LeNet, train_dataloader,val_dataloader, 50)
     matplot_acc_loss(train_process)
 
     # print('a')

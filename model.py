@@ -6,7 +6,7 @@ from torchsummary import summary
 # 定义类，继承nn.Module
 class LeNet(nn.Module):
     # 初始化定义网络层，激活函数。
-    #所有网络约定俗称的方法：
+    # 所有网络约定俗称的方法：
     def __init__(self):
         super(LeNet, self).__init__()
 
@@ -29,11 +29,11 @@ class LeNet(nn.Module):
 
     # 前向传播过程：
     def forward(self, x):
-        x = self.sig(self.c1(x))    #卷积，激活
-        x = self.s2(x)              #平均池化
-        x = self.sig(self.c3(x))    #卷积，激活
-        x = self.s4(x)              #平均池化
-        x = self.flatten(x)         #平展层
+        x = self.sig(self.c1(x))    # 卷积，激活
+        x = self.s2(x)              # 平均池化
+        x = self.sig(self.c3(x))    # 卷积，激活
+        x = self.s4(x)              # 平均池化
+        x = self.flatten(x)         # 平展层
         x = self.sig(self.f5(x))
         x = self.sig(self.f6(x))
         x = self.f7(x)
@@ -42,7 +42,7 @@ class LeNet(nn.Module):
 
 if __name__ == '__main__':
     # 判断GPU还是CPU
-    #这里的("cuda" if torch.cuda.is_available() else "cpu") 是一个三元运算符
+    # 这里的("cuda" if torch.cuda.is_available() else "cpu") 是一个三元运算符
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(device)
 
